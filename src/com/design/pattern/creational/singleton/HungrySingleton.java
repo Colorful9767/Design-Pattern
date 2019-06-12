@@ -7,7 +7,7 @@ import java.io.Serializable;
  * 饿汉式单例模式
  * 非延迟加载对象
  */
-public class HungrySingleton {
+public class HungrySingleton implements Serializable {
     private final static HungrySingleton hungrySingleton;
 
     static {
@@ -19,6 +19,14 @@ public class HungrySingleton {
     }
 
     public static HungrySingleton getInstance() {
+        return hungrySingleton;
+    }
+
+    /**
+     * 解决序列化时 单例对象不一致的问题
+     * @return
+     */
+    private Object readResolve() {
         return hungrySingleton;
     }
 }
