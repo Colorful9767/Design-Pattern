@@ -62,7 +62,7 @@ public class Email implements Cloneable{
         try {
             return super.clone();
         } catch (CloneNotSupportedException e) {
-            System.out.println("clone Email Object error!!");
+            System.out.println("deepClone Email Object error!!");
             e.printStackTrace();
         }
         return null;
