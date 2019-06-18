@@ -2,6 +2,7 @@ package com.design.pattern.structural.adapter.example;
 
 /**
  * Created by perl on 2019/6/18.
+ * 电源适配器
  */
 public class PowerAdapter implements DC {
     private AC ac;
