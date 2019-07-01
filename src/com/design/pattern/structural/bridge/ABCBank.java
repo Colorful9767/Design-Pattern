@@ -5,7 +5,7 @@ package com.design.pattern.structural.bridge;
  * 农业银行类
  */
 public class ABCBank extends Bank {
-    public ABCBank(Account account) {
+    ABCBank(Account account) {
         super(account);
     }
 
