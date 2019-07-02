@@ -7,12 +7,16 @@ package com.design.pattern.behavior.strategy.v2;
 public class Test {
 
     public static void main(String[] args) {
-        PromotionStrategyFactory.getPromotionStrategy("CB").doPromotion();
+        PromotionActivity cashBackPromotionActivity = new PromotionActivity(PromotionStrategyFactory.getPromotionStrategy("CB"));
+        cashBackPromotionActivity.excutePromotionStrategy();
         System.out.println("----------------");
-        PromotionStrategyFactory.getPromotionStrategy("VR").doPromotion();
+        PromotionActivity verticalPromotionActivity = new PromotionActivity(PromotionStrategyFactory.getPromotionStrategy("VR"));
+        verticalPromotionActivity.excutePromotionStrategy();
         System.out.println("----------------");
-        PromotionStrategyFactory.getPromotionStrategy("FR").doPromotion();
+        PromotionActivity fullPromotionActivity = new PromotionActivity(PromotionStrategyFactory.getPromotionStrategy("FR"));
+        fullPromotionActivity.excutePromotionStrategy();
         System.out.println("----------------");
-        PromotionStrategyFactory.getPromotionStrategy("xxxxx").doPromotion();
+        PromotionActivity emptyPromotionActivity = new PromotionActivity(PromotionStrategyFactory.getPromotionStrategy("xx"));
+        emptyPromotionActivity.excutePromotionStrategy();
     }
 }
