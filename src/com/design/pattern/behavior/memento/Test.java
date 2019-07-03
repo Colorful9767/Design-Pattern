@@ -2,6 +2,7 @@ package com.design.pattern.behavior.memento;
 
 /**
  * Created by perl on 2019/7/3.
+ * 测试类
  */
 public class Test {
 

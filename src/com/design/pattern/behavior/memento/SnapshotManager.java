@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * Created by perl on 2019/7/3.
+ * 快照工具类
  */
 public class SnapshotManager {
     private Stack<WordDocSnapshot> SNAPSHOT_STACK = new Stack<>();

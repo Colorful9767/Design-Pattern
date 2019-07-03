@@ -2,6 +2,7 @@ package com.design.pattern.behavior.memento;
 
 /**
  * Created by perl on 2019/7/3.
+ * 文档快照类
  */
 public class WordDocSnapshot {
     private String title;
