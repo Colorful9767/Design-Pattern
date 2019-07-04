@@ -2,6 +2,7 @@ package com.design.pattern.behavior.chainofresponsibility;
 
 /**
  * Created by perl on 2019/7/4.
+ * 审批实体类
  */
 public class WorkPlan {
     private Long id;

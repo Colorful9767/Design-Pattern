@@ -2,6 +2,7 @@ package com.design.pattern.behavior.chainofresponsibility;
 
 /**
  * Created by perl on 2019/7/4.
+ * 测试类
  */
 public class Test {
 
