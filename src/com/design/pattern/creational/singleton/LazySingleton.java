@@ -8,6 +8,7 @@ public class LazySingleton {
     //  step1 声明一个全局可访问的对象
     private static LazySingleton lazySingleton = null;
     //  Step2 定义私有构造器  防止外部通过new关键字实例化该对象
+
     private LazySingleton(){
 
     }
@@ -17,8 +18,9 @@ public class LazySingleton {
      * @return
      */
     public static LazySingleton getInstance(){
-        if (lazySingleton == null)
+        if (lazySingleton == null) {
             lazySingleton = new LazySingleton();
+        }
         return lazySingleton;
     }
 
@@ -27,8 +29,9 @@ public class LazySingleton {
      * @return
      */
     public synchronized static  LazySingleton getInstance1(){
-        if (lazySingleton == null)
+        if (lazySingleton == null) {
             lazySingleton = new LazySingleton();
+        }
         return lazySingleton;
     }
 
@@ -38,8 +41,9 @@ public class LazySingleton {
      */
     public static  LazySingleton getInstance2(){
         synchronized (LazySingleton.class){
-            if (lazySingleton == null)
+            if (lazySingleton == null) {
                 lazySingleton = new LazySingleton();
+            }
         }
 
         return lazySingleton;
