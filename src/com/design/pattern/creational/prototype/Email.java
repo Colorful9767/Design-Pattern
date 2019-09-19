@@ -52,9 +52,7 @@ public class Email implements Cloneable{
 
     /**
      * 实现原型模式的关键是
-     * 让对象可以被拷贝
-     * 即实现Cloneable接口
-     * 并重写clone()方法
+     * 让对象可以被拷贝,即实现Cloneable接口,并重写clone()方法
      * @return
      */
     @Override
